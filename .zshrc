@@ -10,8 +10,9 @@
 # Set Shell variable
 # WORDCHARS=$WORDCHARS:s,/,,
 HISTSIZE=200 HISTFILE=~/.zhistory SAVEHIST=180
-PROMPT='%m%% '
-RPROMPT='[%~]'
+PROMPT='%B%F{3}%m%f%b@%T %F{cyan}[%~]%f
+%% '
+RPROMPT=''
 
 # Set shell options
 # 有効にしてあるのは副作用の少ないもの
@@ -51,5 +52,5 @@ autoload -U compinit && compinit
 
 source ~/.bashrc
 
-# RVM
-[ -s "$HOME/.rvm/scripts/rvm" ] && . "$HOME/.rvm/scripts/rvm"
+# for rbenv
+eval "$(rbenv init - zsh)"
