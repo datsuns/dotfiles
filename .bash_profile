@@ -1,8 +1,14 @@
 alias la='ls -a' ll='ls -l' lla='ls -la'
 alias grep='grep --color=auto'
 alias v='vim'
+GIT_EDITOR=v
 
-alias gitdiff='git difftool --tool=vimdiff --no-prompt'
+alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+alias vimdiff='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -d "$@"'
+
+# tool:my is set in ~/.gitconfig
+alias gitdiff='git difftool --tool=my --no-prompt'
 alias gs='git status'
 alias gc='git checkout'
 
@@ -13,6 +19,7 @@ alias megamake='ino build -m mega2560 && ino upload -m mega2560 && ino serial'
 
 PATH=/opt/local/bin:$HOME/bin:$PATH:$HOME/bin/gradle-1.0-rc-1/bin:~/bin:~/bin/android-sdk-macosx/platform-tools
 
+export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
 
 ##
@@ -29,3 +36,4 @@ export LSCOLORS=GxDxcxdxCxegedabagacad
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+

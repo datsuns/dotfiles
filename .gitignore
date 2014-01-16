@@ -67,3 +67,13 @@ data/
 node_modules/
 typescript
 work/
+./lib/
+./package/
+./src/org/
+./lib/
+./package/
+./src/org/
+.build/
+.ivy2/
+.jenkins/
+.sbt/

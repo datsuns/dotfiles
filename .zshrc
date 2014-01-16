@@ -9,7 +9,7 @@
 ###
 # Set Shell variable
 # WORDCHARS=$WORDCHARS:s,/,,
-HISTSIZE=200 HISTFILE=~/.zhistory SAVEHIST=180
+HISTSIZE=20000 HISTFILE=~/.zhistory SAVEHIST=18000
 PROMPT='%B%F{3}%m%f%b@%T %F{cyan}[%~]%f
 %% '
 RPROMPT=''
