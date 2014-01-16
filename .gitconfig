@@ -1,0 +1,27 @@
+[user]
+	name = datsuns
+	email = the.skeleton7@gmail.com
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+[diff]
+  tool = my
+[difftool "my"]
+  cmd = /Applications/MacVim.app/Contents/MacOS/vim -d \"$LOCAL\" \"$REMOTE\"
+[alias]
+  a = add
+  b = branch
+	c = commit -v
+  d = difftool --tool=my --no-prompt
+  f = fetch
+	g = log --all --graph --oneline --decorate
+	l = log --all
+  m = merge
+	r = reset
+	s = status
+  t = tag
+	co = checkout
+  ap = add --patch
+
+

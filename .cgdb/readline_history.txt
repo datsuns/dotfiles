@@ -1,0 +1,207 @@
+q
+:qa
+q
+q
+y
+y
+y
+y
+y
+y
+y
+q
+t
+target remote localhost:3333
+monitor reset halt
+load
+target remote localhost:3333
+monitor reset halt
+n
+n
+n
+c
+r
+run
+target remote halst
+y
+close
+monitor reset halt
+target remote localhost:3333
+monitor reset halst
+monitor reset halst
+load
+kj:qa
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+target remote localhost:3333
+monitor reset halt
+load
+r
+h
+h running
+monitor reset halt
+load
+monitor reset halt
+c
+target remote localhost:3333
+monitor reset halt
+d
+n
+h
+h data
+p oqp
+opq->q_buffer
+oqp->q_buffer
+p oqp->q_buffer
+s
+s
+p oqp->q_buffer
+s
+s
+s
+s
+s
+s
+s
+p c
+s
+q
+y
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+target remote localhost:3333
+monitor reset halt
+monitor reset halt
+c
+q
+y
+target remote localhost:3333
+monitor reset halt
+load
+q
+y
+target remote localhost:3333
+monitor reset halt
+load
+target remote localhost:3333
+monitor reset halt
+c
+target remote localhost:3333
+monitor reset halt
+load
+target remote localhost:3333
+monitor reset halt
+c
+q
+q
+target remote localhost:3333
+load
+target remote localhost:3333
+monitor reset halt
+c
+target remote localhost:3333
+monitor reset halt
+load
+target remote localhost:3333
+monitor reset halt
+c
+target remote localhost:3333
+monitor reset halt
+load
+target remote localhost:3333
+monitor reset halt
+c
+target remote localhost:3333
+monitor reset halt
+load
+target remote localhost:3333
+monitor reset halt
+c
+:q
+q
+q
+y
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+c
+target remote localhost:3333
+monitor reset halt
+load
+target remote localhost:3333
+target remote localhost:3333
+:q
+q
+target remote localhost:3333
+q
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+c
+q
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+c
+target remote localhost:3333
+monitor reset halt
+target remote localhost:3333
+q
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+c
+q
+q
+y
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+c
+t
+target remote localhost:3333
+:q
+monitor reset halt
+load
+monitor reset halt
+c
+q
+q
+q
+y
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+c
+q
+q
+y
+target remote localhost:3333
+monitor reset halt
+load
+monitor reset halt
+c
+target remote localhost:3333
+target remote localhost:3333
+y
+q
+target remote localhost:3333
+q
+target remote localhost:3333
+q
+target remote localhost:3333
+monitor reset halt
+loda
+load
+monitor reset halt
+c

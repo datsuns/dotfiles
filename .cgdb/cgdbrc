@@ -1,0 +1,17 @@
+set ignorecase
+
+highlight SelectedLineNr ctermfg=Red ctermbg=White
+
+highlight Statement	ctermfg=blue cterm=bold
+highlight Type		ctermfg=blue cterm=bold
+highlight Constant  ctermfg=magenta cterm=bold
+highlight Comment	ctermfg=green cterm=bold
+highlight PreProc 	ctermfg=cyan cterm=bold
+
+map <F10> :next<CR>
+map <F11> :step<CR>
+map <F12> :up<CR>
+map <F5>  :start<CR>
+map r :r<CR>
+map c :c<CR>
+
