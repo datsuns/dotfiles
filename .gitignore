@@ -73,3 +73,7 @@ work/
 .ivy2/
 .jenkins/
 .sbt/
+./lib/
+./package/
+./src/org/
+.*.log
