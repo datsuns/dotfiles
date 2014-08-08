@@ -15,3 +15,10 @@ path=($path /usr/*/bin(N-/) /usr/local/*/bin(N-/) /var/*/bin(N-/))
 # リモートから起動するコマンド用の環境変数を設定(必要なら)
 export RSYNC_RSH=ssh
 export CVS_RSH=ssh
+
+# for rbenv
+if [ -d ${HOME}/.rbenv ] ; then
+  PATH=${HOME}/.rbenv/bin:${PATH}
+  export PATH
+  eval "$(rbenv init -)"
+fi

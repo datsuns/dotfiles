@@ -52,5 +52,3 @@ autoload -U compinit && compinit
 
 source ~/.bashrc
 
-# for rbenv
-eval "$(rbenv init - zsh)"
