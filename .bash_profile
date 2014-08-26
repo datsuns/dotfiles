@@ -9,8 +9,7 @@ alias vimdiff='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim 
 
 # tool:my is set in ~/.gitconfig
 alias gitdiff='git difftool --tool=my --no-prompt'
-alias gs='git status'
-alias gc='git checkout'
+alias g='git'
 
 alias tiga='tig --all'
 alias inomake='ino build && ino upload && ino serial'
@@ -31,7 +30,7 @@ export LSCOLORS=GxDxcxdxCxegedabagacad
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
 
 
