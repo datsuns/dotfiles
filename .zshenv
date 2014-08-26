@@ -16,9 +16,16 @@ path=($path /usr/*/bin(N-/) /usr/local/*/bin(N-/) /var/*/bin(N-/))
 export RSYNC_RSH=ssh
 export CVS_RSH=ssh
 
+PATH=$HOME/bin:$PATH:$HOME/bin/gradle-1.0-rc-1/bin:~/bin:~/bin/android-sdk-macosx/platform-tools
+PATH=/usr/local/bin:$PATH
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+
+
+
 # for rbenv
 if [ -d ${HOME}/.rbenv ] ; then
-  PATH=${HOME}/.rbenv/bin:${PATH}
-  export PATH
+  export PATH=${HOME}/.rbenv/bin:${PATH}
   eval "$(rbenv init -)"
 fi
