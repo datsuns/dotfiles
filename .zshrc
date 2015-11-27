@@ -15,12 +15,12 @@ PROMPT='%B%F{3}%m%f%b@%T %F{cyan}[%~]%f
 RPROMPT=''
 
 # Set shell options
-# Í­¸ú¤Ë¤·¤Æ¤¢¤ë¤Î¤ÏÉûºîÍÑ¤Î¾¯¤Ê¤¤¤â¤Î
+# æœ‰åŠ¹ã«ã—ã¦ã‚ã‚‹ã®ã¯å‰¯ä½œç”¨ã®å°‘ãªã„ã‚‚ã®
 setopt auto_cd auto_remove_slash auto_name_dirs 
 setopt extended_history hist_ignore_dups hist_ignore_space prompt_subst
 setopt extended_glob list_types no_beep always_last_prompt
 setopt cdable_vars sh_word_split auto_param_keys pushd_ignore_dups
-# ÊØÍø¤À¤¬ÉûºîÍÑ¤Î¶¯¤¤¤â¤Î¤Ï¥³¥á¥ó¥È¥¢¥¦¥È
+# ä¾¿åˆ©ã ãŒå‰¯ä½œç”¨ã®å¼·ã„ã‚‚ã®ã¯ã‚³ãƒ¡ãƒ³ãƒˆã‚¢ã‚¦ãƒˆ
 #setopt auto_menu  correct rm_star_silent sun_keyboard_hack
 #setopt share_history inc_append_history
 
@@ -35,7 +35,7 @@ mdcd ()		{mkdir -p "$@" && cd "$*[-1]"}
 mdpu ()		{mkdir -p "$@" && pushd "$*[-1]"}
 alias pu=pushd po=popd dirs='dirs -v'
 
-# Suffix aliases(µ¯Æ°¥³¥Ş¥ó¥É¤Ï´Ä¶­¤Ë¤è¤Ã¤ÆÊÑ¹¹¤¹¤ë)
+# Suffix aliases(èµ·å‹•ã‚³ãƒãƒ³ãƒ‰ã¯ç’°å¢ƒã«ã‚ˆã£ã¦å¤‰æ›´ã™ã‚‹)
 alias -s pdf=acroread dvi=xdvi 
 alias -s {odt,ods,odp,doc,xls,ppt}=soffice
 alias -s {tgz,lzh,zip,arc}=file-roller
@@ -45,10 +45,23 @@ bindkey -e
 #bindkey '^p'	history-beginning-search-backward
 #bindkey '^n'	history-beginning-search-forward
 
-# Êä´°¥·¥¹¥Æ¥à¤òÍøÍÑ: Êä´°¤ÎµóÆ°¤¬Ê¬¤«¤ê¤ä¤¹¤¯¤Ê¤ë2¤Ä¤ÎÀßÄê¤Î¤ßµ­½Ò
+# è£œå®Œã‚·ã‚¹ãƒ†ãƒ ã‚’åˆ©ç”¨: è£œå®Œã®æŒ™å‹•ãŒåˆ†ã‹ã‚Šã‚„ã™ããªã‚‹2ã¤ã®è¨­å®šã®ã¿è¨˜è¿°
 zstyle ':completion:*' format '%BCompleting %d%b'
 zstyle ':completion:*' group-name ''
+# è£œå®Œã§å¤§æ–‡å­—å°æ–‡å­—ã‚’åŒºåˆ¥ã—ãªã„
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+# è£œå®Œå€™è£œã‚‚ãƒã‚¤ãƒ©ã‚¤ãƒˆ
+zstyle ':completion:*:default' menu select=2
+
+
 autoload -U compinit && compinit
 
+
 source ~/.bashrc
+
+
+PERL_MB_OPT="--install_base \"/Users/datsuns/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/datsuns/perl5"; export PERL_MM_OPT;
+
+source $(brew --prefix nvm)/nvm.sh
 
