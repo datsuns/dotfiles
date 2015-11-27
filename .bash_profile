@@ -15,9 +15,13 @@ alias tiga='tig --all'
 alias inomake='ino build && ino upload && ino serial'
 alias megamake='ino build -m mega2560 && ino upload -m mega2560 && ino serial'
 
+alias gtagsp='gtags --gtagsconf=/Users/datsuns/work/build/pygments/gtags.conf --gtagslabel=pygments'
+alias globalp='global --gtagsconf=/Users/datsuns/work/build/pygments/gtags.conf --gtagslabel=pygments'
+
 
 #PATH=/opt/local/bin:$HOME/bin:$PATH:$HOME/bin/gradle-1.0-rc-1/bin:~/bin:~/bin/android-sdk-macosx/platform-tools
-PATH=$HOME/bin:$PATH:$HOME/bin/gradle-1.0-rc-1/bin:~/bin:~/bin/android-sdk-macosx/platform-tools
+#PATH=$HOME/bin:$PATH:$HOME/bin/gradle-1.0-rc-1/bin:~/bin:~/bin/android-sdk-macosx/platform-tools
+PATH=$HOME/bin:$PATH:$HOME/bin/gradle-1.0-rc-1/bin:~/bin:~/Library/Android/sdk/platform-tools/
 PATH=/usr/local/bin:$PATH
 
 export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
@@ -32,5 +36,7 @@ export LSCOLORS=GxDxcxdxCxegedabagacad
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
-
+export GOROOT=$(brew --prefix go)/libexec
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 
