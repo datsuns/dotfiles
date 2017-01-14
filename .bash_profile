@@ -1,11 +1,11 @@
 alias la='ls -a' ll='ls -l' lla='ls -la'
 alias grep='grep --color=auto'
 alias v='vim'
-GIT_EDITOR=v
+export GIT_EDITOR=/usr/local/bin/vim
 
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vimdiff='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -d "$@"'
+#alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+#alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
+#alias vimdiff='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim -d "$@"'
 
 # tool:my is set in ~/.gitconfig
 alias gitdiff='git difftool --tool=my --no-prompt'
@@ -24,7 +24,7 @@ alias globalp='global --gtagsconf=/Users/datsuns/work/build/pygments/gtags.conf 
 PATH=$HOME/bin:$PATH:$HOME/bin/gradle-1.0-rc-1/bin:~/bin:~/Library/Android/sdk/platform-tools/
 PATH=/usr/local/bin:$PATH
 
-export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
+#export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 
 # MacPorts Installer addition on 2012-04-08_at_22:54:21: adding an appropriate PATH variable for use with MacPorts.
 # Finished adapting your PATH environment variable for use with MacPorts.
