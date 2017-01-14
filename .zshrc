@@ -56,12 +56,12 @@ zstyle ':completion:*:default' menu select=2
 
 autoload -U compinit && compinit
 
-
 source ~/.bashrc
-
 
 PERL_MB_OPT="--install_base \"/Users/datsuns/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/datsuns/perl5"; export PERL_MM_OPT;
 
-source $(brew --prefix nvm)/nvm.sh
+#source $(brew --prefix nvm)/nvm.sh
+
+[[ -s "/Users/datsuns/.gvm/scripts/gvm" ]] && source "/Users/datsuns/.gvm/scripts/gvm"
 
