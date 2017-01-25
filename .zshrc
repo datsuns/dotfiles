@@ -65,3 +65,4 @@ PERL_MM_OPT="INSTALL_BASE=/Users/datsuns/perl5"; export PERL_MM_OPT;
 
 [[ -s "/Users/datsuns/.gvm/scripts/gvm" ]] && source "/Users/datsuns/.gvm/scripts/gvm"
 
+export GOPATH=~/.go

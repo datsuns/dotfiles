@@ -36,7 +36,7 @@ export LSCOLORS=GxDxcxdxCxegedabagacad
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
 
-export GOROOT=$(brew --prefix go)/libexec
-export GOPATH=$HOME/.go
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+#export GOROOT=$(brew --prefix go)/libexec
+export GOPATH=~/.go
+export PATH=$PATH:$GOPATH/bin
 
