@@ -1,0 +1,22 @@
+[credential]
+	helper = manager
+[core]
+	autocrlf = false
+	filemode = false
+[user]
+	email = the.skeleton7@gmail.com
+	name = datsuns
+[alias]
+	a  = add
+	b  = branch
+	ba = branch --all
+	c  = commit --verbose
+	co = checkout
+	dn = diff --name-only
+	f  = fetch
+	m  = merge
+	r  = reset
+	s  = status
+	t  = tag
+[credential "helperselector"]
+	selected = manager

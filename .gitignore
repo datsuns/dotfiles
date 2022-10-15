@@ -1,0 +1,10 @@
+.landscape/
+.ssh/
+.vim/
+bk/
+
+.bash_history
+.motd_shown
+.swp
+.viminfo
+myconfig

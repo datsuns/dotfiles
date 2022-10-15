@@ -1,1 +1,0 @@
-backend : WXAgg   # use wxpython with antigrain (agg) rendering
