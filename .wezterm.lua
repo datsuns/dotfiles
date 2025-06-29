@@ -30,14 +30,26 @@ config.color_schemes = {
 
 -- https://wezterm.org/config/lua/config/index.html
 config.adjust_window_size_when_changing_font_size = false
-config.audible_bell = 'Disabled'
-config.bold_brightens_ansi_colors = 'BrightAndBold'
-config.enable_scroll_bar = true
-config.enable_tab_bar    = true
+config.audible_bell                 = 'Disabled'
+config.bold_brightens_ansi_colors   = 'BrightAndBold'
+config.default_cursor_style         = 'SteadyBlock'
+config.enable_scroll_bar            = true
+config.enable_tab_bar               = true
 config.hide_tab_bar_if_only_one_tab = false
-config.tab_bar_at_bottom = false
-config.tab_max_width     = 16
-config.use_fancy_tab_bar = true
+config.show_tab_index_in_tab_bar    = false
+-- config.skip_close_confirmation_for_processes_named = {
+--   'bash',
+--   'sh',
+--   'tmux',
+--   'cmd.exe',
+--   'pwsh.exe',
+--   'powershell.exe',
+-- }
+config.tab_bar_at_bottom            = false
+config.tab_max_width                = 10
+config.use_fancy_tab_bar            = true
+config.window_close_confirmation    = 'NeverPrompt'
+config.window_decorations           = 'RESIZE'
 
 config.default_prog = { 'bash.exe', '--login',  '-i', '-l' }
 config.default_cwd = "~"
@@ -61,9 +73,24 @@ config.keys = {
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
   {
-    key = 'F1',
+    key = 'F12',
     mods = 'SHIFT|CTRL',
     action = wezterm.action.ShowLauncher,
+  },
+  {
+    key = 'F1',
+    mods = 'SHIFT|CTRL',
+    action = wezterm.action.SpawnCommandInNewTab {
+      args = { 'bash', '--login',  '-i', '-l' },
+      cwd = '~'
+    }
+  },
+  {
+    key = 'F2',
+    mods = 'SHIFT|CTRL',
+    action = wezterm.action.SpawnCommandInNewTab {
+      args = { 'wsl.exe', '-d', 'Ubuntu-22.04', '--cd', '~' },
+    }
   },
 }
 
