@@ -10,7 +10,8 @@ config.scrollback_lines = 3500
 
 -- This is where you actually apply your config choices
 
-local MyFont = wezterm.font { family = 'MyricaM M', weight = 'Bold' }
+-- local MyFont = wezterm.font { family = 'MyricaM M', weight = 'Bold' }
+local MyFont = wezterm.font { family = 'MyricaM M' }
 config.font         = MyFont
 config.font_size    = 18.0
 config.window_frame = {
@@ -25,6 +26,7 @@ config.color_schemes = {
     background = 'black',
     foreground = 'white',
     compose_cursor = 'magenta',
+    selection_bg = '#dd4444',
   },
 }
 
@@ -33,6 +35,7 @@ config.adjust_window_size_when_changing_font_size = false
 config.audible_bell                 = 'Disabled'
 config.bold_brightens_ansi_colors   = 'BrightAndBold'
 config.default_cursor_style         = 'SteadyBlock'
+config.dpi                          = 120
 config.enable_scroll_bar            = true
 config.enable_tab_bar               = true
 config.hide_tab_bar_if_only_one_tab = false
@@ -50,6 +53,8 @@ config.tab_max_width                = 10
 config.use_fancy_tab_bar            = true
 config.window_close_confirmation    = 'NeverPrompt'
 config.window_decorations           = 'RESIZE'
+-- config.window_frame = {
+-- }
 
 config.default_prog = { 'bash.exe', '--login',  '-i', '-l' }
 config.default_cwd = "~"
