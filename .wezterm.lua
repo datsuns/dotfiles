@@ -52,7 +52,7 @@ config.tab_bar_at_bottom            = false
 config.tab_max_width                = 10
 config.use_fancy_tab_bar            = true
 config.window_close_confirmation    = 'NeverPrompt'
-config.window_decorations           = 'RESIZE'
+config.window_decorations           = 'TITLE | RESIZE'
 -- config.window_frame = {
 -- }
 
