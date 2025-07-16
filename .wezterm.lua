@@ -97,6 +97,13 @@ config.keys = {
       args = { 'wsl.exe', '-d', 'Ubuntu-22.04', '--cd', '~' },
     }
   },
+  {
+    key = 'F3',
+    mods = 'SHIFT|CTRL',
+    action = wezterm.action.SpawnCommandInNewTab {
+      args = { 'cmd.exe' },
+    }
+  },
 }
 
 -- and finally, return the configuration to wezterm
