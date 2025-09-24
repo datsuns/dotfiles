@@ -104,6 +104,28 @@ config.keys = {
       args = { 'cmd.exe' },
     }
   },
+    {
+    key = 'F4',
+    mods = 'SHIFT|CTRL',
+    action = wezterm.action.SpawnCommandInNewTab {
+      args = { 'powershell.exe' },
+    }
+  },
+  {
+    key = 'n',
+    mods = 'SHIFT|CTRL',
+    action = wezterm.action.SpawnTab 'CurrentPaneDomain',
+  },
+  {
+    key = 'LeftArrow',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.ActivateTabRelative(-1),
+  },
+  {
+    key = 'RightArrow',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.ActivateTabRelative(1),
+  },
 }
 
 -- and finally, return the configuration to wezterm
